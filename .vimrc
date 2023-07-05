@@ -23,6 +23,7 @@ set modelines=0
 
 " Show line numbers
 set number
+set mouse=a
 
 " Show file stats
 set ruler
