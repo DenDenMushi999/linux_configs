@@ -23,7 +23,8 @@ set modelines=0
 
 " Show line numbers
 set number
-set mouse=a
+" set mouse=a
+se mouse+=a
 
 " Show file stats
 set ruler
@@ -45,6 +46,7 @@ set expandtab
 set noshiftround
 
 " Cursor motion
+set belloff=all
 set scrolloff=3
 set backspace=indent,eol,start
 set matchpairs+=<:> " use % to jump between pairs
