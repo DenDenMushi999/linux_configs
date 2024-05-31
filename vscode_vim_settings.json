@@ -5,16 +5,22 @@
         "editor.formatOnType": true
     },
     "security.promptForLocalFileProtocolHandling": false,
+    "security.workspace.trust.untrustedFiles": "open",
     "workbench.colorTheme": "Visual Studio Light - C++",
     "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+    "terminal.integrated.allowChords": false,
     "explorer.confirmDelete": false,
-    "security.workspace.trust.untrustedFiles": "open",
     "explorer.confirmDragAndDrop": false,
     "editor.renderWhitespace": "all",
-    "diffEditor.ignoreTrimWhitespace": false,
+    // In order to use usual keyboard shortcut of your shell, but not VScode's one
     "editor.unicodeHighlight.allowedLocales": {
+        "diffEditor.ignoreTrimWhitespace": false,
         "ru": true
     },
+    // Jupyter notebook
+    //
+    "notebook.lineNumbers": "on",
+    //
     // Vim settings
     "vim.easymotion": true,
     "vim.incsearch": true,
@@ -32,7 +38,15 @@
             ]
         }
     ],
+    // To ALWAYS open refference in new file
+    // It didn't work
+    "workbench.editor.enablePreviewFromCodeNavigation": false,
+    "workbench.editor.revealIfOpen": false,
+    //
+    ///////////////////////////////////////////////////////////////
+    //
     // All below is taken from https://www.youtube.com/watch?v=GST8we5uABo&
+    // Some keybindings was modified or commented
     "editor.formatOnSave": true,
     "editor.suggest.insertMode": "replace",
     "terminal.integrated.fontFamily": "MesloLGS NF",
@@ -44,15 +58,46 @@
     "workbench.statusBar.visible": true,
     "editor.minimap.enabled": true,
     "breadcrumbs.enabled": true,
-    "workbench.iconTheme": "material-icon-theme",
     "workbench.activityBar.iconClickBehavior": "focus",
     "update.showReleaseNotes": false,
     "zenMode.hideLineNumbers": false,
-    "zenMode.hideTabs": false,
-    // // "editor.lNumbers": "on",
     "vim.leader": "<Space>",
+    // "editor.lNumbers": "on",
     // "vim.hlsearch": true,
+    //
+    // For multiselect
+    // "editor.multiCursorModifier": "ctrlCmd",
+    "editor.multiCursorPaste": "spread",
+    //
+    // If you need to modify visual mode settings
+    "vim.visualModeKeyBindingsNonRecursive": [],
+    //
     "vim.normalModeKeyBindingsNonRecursive": [
+        // SELECTION
+        {
+            "before": [
+                "<leader>v"
+            ],
+            "after": [
+                "<cmd>:<C-u>call VSCodeNotify('editor.action.selectHighlights')<CR>"
+            ]
+        },
+        {
+            "before": [
+                "<C-n>"
+            ],
+            "commands": [
+                "editor.action.addSelectionToNextFindMatch"
+            ]
+        },
+        {
+            "before": [
+                "<C-d>"
+            ],
+            "commands": [
+                "editor.action.selectHighlights"
+            ]
+        },
         // NAVIGATION
         // switch b/w buffers
         {
@@ -89,7 +134,7 @@
             "commands": [
                 ":split"
             ]
-        }
+        },
         // panes
         {
             "before": [
@@ -257,6 +302,7 @@
             ]
         }
     ],
+    "cmake.showOptionsMovedNotification": false,
     // "[typescriptreact]": {
     //     "editor.defaultFormatter": "esbenp.prettier-vscode"
     // },
@@ -267,4 +313,5 @@
     // "[jsonc]": {
     //     "editor.defaultFormatter": "esbenp.prettier-vscode"
     // }
+}
 }
