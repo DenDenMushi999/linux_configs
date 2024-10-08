@@ -37,4 +37,5 @@
     "breadcrumbs.enabled": true,
     "update.showReleaseNotes": false,
     "zenMode.hideLineNumbers": false,
+    "scm.showHistoryGraph": false,
 }
