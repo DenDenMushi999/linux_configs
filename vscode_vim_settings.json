@@ -1,26 +1,4 @@
 {
-    "files.trimTrailingWhitespace": true,
-    "terminal.integrated.splitCwd": "inherited",
-    "[python]": {
-        "editor.formatOnType": true
-    },
-    "security.promptForLocalFileProtocolHandling": false,
-    "security.workspace.trust.untrustedFiles": "open",
-    "workbench.colorTheme": "Visual Studio Light - C++",
-    "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
-    "terminal.integrated.allowChords": false,
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "editor.renderWhitespace": "all",
-    // In order to use usual keyboard shortcut of your shell, but not VScode's one
-    "editor.unicodeHighlight.allowedLocales": {
-        "diffEditor.ignoreTrimWhitespace": false,
-        "ru": true
-    },
-    // Jupyter notebook
-    //
-    "notebook.lineNumbers": "on",
-    //
     // Vim settings
     "vim.easymotion": true,
     "vim.incsearch": true,
@@ -301,17 +279,5 @@
                 "editor.action.commentLine"
             ]
         }
-    ],
-    "cmake.showOptionsMovedNotification": false,
-    // "[typescriptreact]": {
-    //     "editor.defaultFormatter": "esbenp.prettier-vscode"
-    // },
-    // "go.toolsManagement.autoUpdate": true,
-    // "[typescript]": {
-    //     "editor.defaultFormatter": "esbenp.prettier-vscode"
-    // },
-    // "[jsonc]": {
-    //     "editor.defaultFormatter": "esbenp.prettier-vscode"
-    // }
-}
+    ]
 }
