@@ -16,10 +16,6 @@
             ]
         }
     ],
-    // To ALWAYS open refference in new file
-    // It didn't work
-    "workbench.editor.enablePreviewFromCodeNavigation": false,
-    "workbench.editor.revealIfOpen": false,
     //
     ///////////////////////////////////////////////////////////////
     //
@@ -27,18 +23,8 @@
     // Some keybindings was modified or commented
     "editor.formatOnSave": true,
     "editor.suggest.insertMode": "replace",
-    "terminal.integrated.fontFamily": "MesloLGS NF",
     "editor.linkedEditing": true,
     "javascript.updateImportsOnFileMove.enabled": "always",
-    // "window.zoomLevel": 0.5,
-    "launch": {},
-    "[json]": {},
-    "workbench.statusBar.visible": true,
-    "editor.minimap.enabled": true,
-    "breadcrumbs.enabled": true,
-    "workbench.activityBar.iconClickBehavior": "focus",
-    "update.showReleaseNotes": false,
-    "zenMode.hideLineNumbers": false,
     "vim.leader": "<Space>",
     // "editor.lNumbers": "on",
     // "vim.hlsearch": true,
