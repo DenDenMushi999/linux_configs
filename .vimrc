@@ -25,8 +25,10 @@ set modelines=0
 
 " Show line numbers
 set number
+
+" In which modes mouse will be available
 " set mouse=a
-se mouse+=a
+set mouse+=a
 
 " Show file stats
 set ruler
