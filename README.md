@@ -46,7 +46,7 @@ while IFS= read -r line; do code --install-extension  "$line"; done < vscode_ext
 
 ## bash
 - for bash I use [oh-my-bash](https://github.com/ohmybash/oh-my-bash) with theme [agnoster](https://github.com/ohmybash/oh-my-bash/tree/master/themes/agnoster)
-
+- For fish-style autocompletetions and menu-complete I use [ble.sh](https://github.com/akinomyoga/ble.sh)
 # Conda settings
 - If you want to change default virtualenvs path, change conda config:
 ```
