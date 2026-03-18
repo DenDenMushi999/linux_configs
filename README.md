@@ -41,8 +41,11 @@ while IFS= read -r line; do code --install-extension  "$line"; done < vscode_ext
 
 # Terminal settings
 ## Powershell
-- I recommend to use PowerShell7, it have more capabilities
+- For Windows I recommend to use PowerShell7, it have more capabilities
 - Copy Profile.ps1 into $PSHOME\Profile.ps1
+
+## bash
+- for bash I use [oh-my-bash](https://github.com/ohmybash/oh-my-bash) with theme [agnoster](https://github.com/ohmybash/oh-my-bash/tree/master/themes/agnoster)
 
 # Conda settings
 - If you want to change default virtualenvs path, change conda config:
